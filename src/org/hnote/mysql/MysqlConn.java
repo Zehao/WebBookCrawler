@@ -16,7 +16,7 @@ public class MysqlConn {
 	private static final String DRIVER = "com.mysql.jdbc.Driver";
 	private static final String USER = "root";
 	private static final String PASSWD = "mysql";
-	private static final String URL = "jdbc:mysql://222.201.139.38:3306/books?useUnicode=true&characterEncoding=UTF-8";
+	private static final String URL = "jdbc:mysql://222.201.xxx.xx:3306/books?useUnicode=true&characterEncoding=UTF-8";
 	private static final String tableName = "books2";
 	private Connection con;
 	private Statement statement;
@@ -69,7 +69,6 @@ public class MysqlConn {
 			statement = con.createStatement();
 			statement.executeUpdate(sql);
 		} catch (SQLException ex){
-			//ex.printStackTrace();
 		}
 	}
 }
